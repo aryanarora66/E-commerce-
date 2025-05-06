@@ -79,7 +79,7 @@ export default function Hero() {
       {/* Hero Image */}
       <div
         className={cn(
-          "absolute inset-0 bg-cover bg-center transition-opacity duration-100",
+          "absolute inset-0 bg-cover bg-center transition-opacity duration-500",
           isTransitioning ? "opacity-0" : "opacity-100",
           slide.position || "object-center"
         )}
@@ -92,7 +92,7 @@ export default function Hero() {
       <div className="relative h-full container mx-auto px-4 flex flex-col justify-center items-start text-white">
         <div
           className={cn(
-            "max-w-xl transition-all duration-100",
+            "max-w-xl transition-all duration-500",
             isTransitioning ? "opacity-0 translate-y-8" : "opacity-100 translate-y-0"
           )}
         >
