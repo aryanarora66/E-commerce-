@@ -6,13 +6,12 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function formatPrice(price: number): string {
-  return new Intl.NumberFormat('en-US', {
+  return new Intl.NumberFormat('en-IN', { // Or 'en-US' if you prefer US English formatting rules
     style: 'currency',
-    currency: 'USD',
+    currency: 'INR', // Use the ISO currency code for Indian Rupee
     minimumFractionDigits: 2,
   }).format(price);
 }
-
 export function truncate(str: string, length: number) {
   return str.length > length ? `${str.substring(0, length)}...` : str;
 }
